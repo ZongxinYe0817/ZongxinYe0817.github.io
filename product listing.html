@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImportCDs-product listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="product listing.css">
+    <script src="product listing.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1 class="logo">ImportCDs</h1>
+        <a href="login.html">Account</a>
+        <a href="cart.html">Cart</a>
+        <a class="active" href="product listing.html">Products</a>
+        <a href="homepage.html">Home</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="sidenav">
+        <h2>Music Categories</h2>
+        <a href="#" style="font-size: 20px;">Music</a><br>
+        <a href="#" style="font-size: 20px;">New Releases</a><br>
+        <a href="#" style="font-size: 20px;">Pre-orders</a><br>
+        <a href="#" style="font-size: 20px;">CDs</a><br>
+        <a href="#" style="font-size: 20px;">SACD</a><br>
+        <a href="#" style="font-size: 20px;">Classical</a><br>
+        <a href="#" style="font-size: 20px;">See All</a><br>
+        <h2>Video Categories</h2>
+        <a href="#" style="font-size: 20px;">Movies</a><br>
+        <a href="#" style="font-size: 20px;">DVDs</a><br>
+        <a href="#" style="font-size: 20px;">Blu-rays</a><br>
+        <a href="#" style="font-size: 20px;">Imports</a><br>
+        <a href="#" style="font-size: 20px;">Television</a><br>
+        <a href="#" style="font-size: 20px;">See All</a><br>
+    </div>
+    <div class="sort">
+        <h2>Sorted by: </h2>
+        <div class="dropdown">
+            <button class="dropbtn">Best match</button>
+            <div class="dropdown-content">
+                <a href="#">Best seller</a>
+                <a href="#">Title A-Z</a>
+                <a href="#">Title Z-A</a>
+                <a href="#">In stock</a>
+                <a href="#">Newest</a>
+            </div>
+        </div>
+        <p class="items">items 1-12 of 99354</p>
+    </div>
+
+    <hr class="line">
+
+    <div class="product">
+        <a href="product page.html"><img src="img/VINYL4.png"></a>
+        <a href="product page.html"><img src="img/CD2.png"></a>
+        <a href="product page.html"><img src="img/CD3.png"></a>
+        <a href="product page.html"><img src="img/VINYL1.png"></a>
+    </div>
+    <div class="cartbuttons">
+        <button id="btn1" class="cartbtn" onclick="incart1();tocart1()">Add to cart</button>
+        <button id="btn2" class="cartbtn" onclick="incart2()">Add to cart</button>
+        <button id="btn3" class="cartbtn" onclick="incart3()">Add to cart</button>
+        <button id="btn4" class="cartbtn" onclick="incart4()">Add to cart</button>
+    </div>
+
+    <div class="product">
+        <a href="product page.html"><img src="img/VINYL2.png"></a>
+        <a href="product page.html"><img src="img/CD1.png"></a>
+        <a href="product page.html"><img src="img/CD4.png"></a>
+        <a href="product page.html"><img src="img/VINYL3.png"></a>
+    </div>
+    <div class="cartbuttons">
+        <button id="btn5" class="cartbtn" onclick="incart5()">Add to cart</button>
+        <button id="btn6" class="cartbtn" onclick="incart6()">Add to cart</button>
+        <button id="btn7" class="cartbtn" onclick="incart7()">Add to cart</button>
+        <button id="btn8" class="cartbtn" onclick="incart8()">Add to cart</button>
+    </div>
+
+    <div class="product">
+        <a href="product page.html"><img src="img/VINYL1.png"></a>
+        <a href="product page.html"><img src="img/CD4.png"></a>
+        <a href="product page.html"><img src="img/CD2.png"></a>
+        <a href="product page.html"><img src="img/VINYL2.png"></a>
+    </div>
+    <div class="cartbuttons">
+        <button id="btn9" class="cartbtn" onclick="incart9()">Add to cart</button>
+        <button id="btn10" class="cartbtn" onclick="incart10()">Add to cart</button>
+        <button id="btn11" class="cartbtn" onclick="incart11()">Add to cart</button>
+        <button id="btn12" class="cartbtn" onclick="incart12()">Add to cart</button>
+    </div>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+
+</html>

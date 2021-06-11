@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImportCDs-Shopping cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1 class="logo">ImportCDs</h1>
+        <a href="login.html">Account</a>
+        <a class="active" href="#">Cart</a>
+        <a href="product listing.html">Products</a>
+        <a href="homepage.html">Home</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <h3 class="title">Home > Shopping Cart</h3>
+    <hr class="line">
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Name</th>
+            <th>Availability</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><img src="img/CD1.png"></td>
+            <td>Anthology: Best of</td>
+            <td>In Stock</td>
+            <td>
+                <div class="counter">
+                    <span class="down" id="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1" id="qty">
+                    <span class="up" id="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+            </td>
+            <td>$20</td>
+            <td>$20</td>
+            <td><input type="button" value="remove" class="removebtn" onclick="removefunction()"></td>
+        </tr>
+
+        <tr>
+            <td><img src="img/CD2.png"></td>
+            <td>Best of</td>
+            <td>In Stock</td>
+            <td>
+                <div class="counter">
+                    <span class="down" id="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="2" id="qty">
+                    <span class="up" id="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+            </td>
+            <td>$15</td>
+            <td>$30</td>
+            <td><input type="button" value="remove" class="removebtn" onclick="removefunction()"></td>
+        </tr>
+
+        <tr>
+            <td><img src="img/CD3.png"></td>
+            <td>5 Classic Albums</td>
+            <td>In Stock</td>
+            <td>
+                <div class="counter">
+                    <span class="down" id="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1" id="qty">
+                    <span class="up" id="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+            </td>
+            <td>$25</td>
+            <td>$25</td>
+            <td><input type="button" value="remove" class="removebtn" onclick="removefunction()"></td>
+        </tr>
+    </table>
+
+    <hr class="line">
+    <h1 class="total">Total: 75$</h1>
+    <div class="btn">
+        <a href="product listing.html"><button class="cartbtn">Continue Shopping</button></a>
+        <a href="checkout1.html"><button class="cartbtn">Checkout</button></a>
+    </div>
+
+</body>
+
+</html>
